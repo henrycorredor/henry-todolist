@@ -1,75 +1,24 @@
-# Nuxt Minimal Starter
+# Technical Assessment: To-Do List Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Candidate: Henry Corredor
 
-## Setup
+### Implementation Overview
+This solution addresses all specified requirements with the following implementations:
 
-Make sure to install dependencies:
+- **CRUD Functionality**: Full CRUD operations managed via Pinia store actions.
 
-```bash
-# npm
-npm install
+    Note: Per project scope, CRUD operations are client-side only (not persisted via API)
 
-# pnpm
-pnpm install
+- **Data Handling**: Utilizes Nuxt server endpoints for mock data:
+ 
+    - Task list fetching
+    - Article data retrieval
+    - Article summaries
 
-# yarn
-yarn install
+- **State Management**: Application state fully managed with Pinia stores
 
-# bun
-bun install
-```
+- **Component Architecture**: 
+  - Features two distinct layouts: Default layout (main application), Article layout (specialized view)
+  - Modular component design per requirements.
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **User Interface**: Faithfully implements provided mockups. Includes confirmation dialogs for all user actions
