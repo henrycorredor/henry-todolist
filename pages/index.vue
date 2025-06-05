@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {useTasksStore} from '~/stores/tasks'
+import {NuxtLink} from "#components";
 
 const taskStore = useTasksStore()
 </script>
